@@ -20,9 +20,9 @@ head(householdPC$Date_Time)
 # Convert Date_Time variable to proper format 
 householdPC$Date_Time <- strptime(householdPC$Date_Time,format="%Y-%m-%d %H:%M:%S") 
 
-png(filename = "plot4.png",width = 480, height = 480)
+png(filename = "plot4.png",width = 480, height = 480,units = "px"))
 
-par(mfrow = c(2, 2), mar = c(14, 6, 2, 2), cex=.5)
+par(mfrow = c(2, 2))
 ####Plot(1,1)####
 plot(householdPC$Date_Time,householdPC$Global_active_power,type="l",xaxt=NULL,xlab="",ylab="Global Active Power(Kilowatts)")
 

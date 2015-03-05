@@ -20,6 +20,9 @@ householdPC<-hpc[hpc$Date=="1/2/2007"|hpc$Date=="2/2/2007",]
 ####Plot1####
 png(filename = "plot1.png",width = 480, height = 480)
 
+par(mar = c(6, 6, 5, 4))
+
 hist(householdPC$Global_active_power,col="red",main="Global Active Power",xlab="Global Active Power(Kilowatts)",xlim=c(0,6))
 
 dev.off()
+
